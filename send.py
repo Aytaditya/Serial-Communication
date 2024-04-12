@@ -30,7 +30,7 @@ while True:
         #read the data from the serial port
         data=ser.readline().decode('utf-8').strip() #decode the data and remove the trailing newline character
 
-        #send the data to firebase
+        #send the data to firebase by calling the function
         send_data_to_firebase(data)
 
         #wait for 5 seconds before sending the next data
